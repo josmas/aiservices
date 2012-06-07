@@ -6,8 +6,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-
-import com.jos.aiservices.AiServicesActivity;
 import com.jos.aiservices.services.ReadFromWebService;
 
 public class BootUpReceiver extends BroadcastReceiver {
