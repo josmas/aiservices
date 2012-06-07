@@ -1,4 +1,4 @@
-package com.jos.aiservices.bootup;
+package com.jos.aiservices.receivers;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
