@@ -3,5 +3,8 @@
 
     <string name="hello">Hello World, this is so awesome!</string>
     <string name="app_name">AIservices</string>
+    <string name="titlePrefs">Prefs</string>
+    <string name="webInterval">Web Interval</string>
+    <string name="summaryWebInterval">Interval to read from the web</string>
 
 </resources>

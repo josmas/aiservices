@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="webinterval"
+        android:summary="@string/summaryWebInterval"
+        android:title="@string/webInterval" android:selectable="true" android:enabled="true">
+    </EditTextPreference>
+
+</PreferenceScreen>

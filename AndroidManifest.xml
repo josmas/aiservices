@@ -32,8 +32,11 @@
             </intent-filter>
         </activity>
         
+        <activity
+            android:name=".PrefsActivity"
+            android:label="@string/titlePrefs" />
+
         <service android:name=".services.ReadFromWebService" />
-        
     </application>
 
 </manifest>
