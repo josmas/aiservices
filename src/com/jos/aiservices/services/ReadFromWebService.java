@@ -17,6 +17,7 @@ public class ReadFromWebService extends IntentService {
 
 	public ReadFromWebService() {
 		super("ReadFromWebService");
+		Log.d(TAG, "ReadFromWebService Created");
 	}
 
 	@Override
@@ -30,7 +31,7 @@ public class ReadFromWebService extends IntentService {
 	}
 
 	private Notification createNotification() {
-		
+		Log.d(TAG, "Create Notification Called");
 		int icon = android.R.drawable.btn_default;
 		CharSequence tickerText = "15 minute interval notification!";
 		long when = System.currentTimeMillis();
