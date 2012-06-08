@@ -51,7 +51,7 @@ public class AiServicesActivity extends Activity implements OnSharedPreferenceCh
 	@Override
 	public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
 			String key) {
-		long interval = new Long( prefs.getString("webinterval", "300000") ).longValue();
+		long interval = new Long( prefs.getString("webinterval", "0") ).longValue();
         Log.d(TAG, "Boot up Receiver was called: onReceive : setting an alarm every " + interval + " minutes (pending intent)");
         
         AlarmManager am = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);

@@ -18,7 +18,7 @@ public class BootUpReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
         prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        long interval = new Long( prefs.getString("webinterval", "300000") ).longValue();
+        long interval = new Long( prefs.getString("webinterval", "0") ).longValue();
         
         if (interval != 0l){
         	Log.d(TAG, "Boot up Receiver was called: onReceive : setting an alarm every " + interval + " minutes (pending intent)");
