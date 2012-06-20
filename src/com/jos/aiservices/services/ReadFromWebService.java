@@ -10,6 +10,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+/**
+ * This service is a Mock of reading from a Web Service.
+ * It does nothing from now, other than sending a notification to the user
+ * signaling that something happened and letting them open the activity from
+ * that notification
+ * @author jos
+ *
+ */
 public class ReadFromWebService extends IntentService {
 	
 	private static final String TAG = "ReadFromWebService";

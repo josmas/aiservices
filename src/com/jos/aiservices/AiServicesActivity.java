@@ -16,6 +16,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+/**
+ * This is the main activity and it does nothing other than showing a message
+ * It is also a shared preferences listener and provides a menu button to
+ * access the preferences activity in which the Interval for the ReadFromWebService
+ * can be set.
+ * @author jos
+ *
+ */
 public class AiServicesActivity extends Activity implements OnSharedPreferenceChangeListener {
 
 	private static final String TAG = "AiServicesActivity";
