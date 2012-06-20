@@ -37,6 +37,7 @@ public class ReadFromWebService extends IntentService {
 		long when = System.currentTimeMillis();
 
 		Notification notification = new Notification(icon, tickerText, when);
+		notification.flags = Notification.FLAG_AUTO_CANCEL;
 		
 		Context context = getApplicationContext();
 		CharSequence contentTitle = "My 15 minute notification";
