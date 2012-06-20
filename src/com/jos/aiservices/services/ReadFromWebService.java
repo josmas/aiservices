@@ -22,7 +22,7 @@ public class ReadFromWebService extends IntentService {
 
 	@Override
 	protected void onHandleIntent(Intent intent) {
-		Log.d(TAG, "(Mocked)Reading from the WEB on a 15 minutes interval");
+		Log.d(TAG, "(Mocked)Reading from the WEB on an specified interval");
 		
 		String ns = Context.NOTIFICATION_SERVICE;
 		NotificationManager mNotificationManager = (NotificationManager) getSystemService(ns);
@@ -33,15 +33,15 @@ public class ReadFromWebService extends IntentService {
 	private Notification createNotification() {
 		Log.d(TAG, "Create Notification Called");
 		int icon = android.R.drawable.btn_default;
-		CharSequence tickerText = "15 minute interval notification!";
+		CharSequence tickerText = "Interval notification!";
 		long when = System.currentTimeMillis();
 
 		Notification notification = new Notification(icon, tickerText, when);
 		notification.flags = Notification.FLAG_AUTO_CANCEL;
 		
 		Context context = getApplicationContext();
-		CharSequence contentTitle = "My 15 minute notification";
-		CharSequence contentText = "Hello 15!";
+		CharSequence contentTitle = "My Interval notification";
+		CharSequence contentText = "Hello ALARM!";
 		Intent notificationIntent = new Intent(this, AiServicesActivity.class);
 		PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
