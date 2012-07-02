@@ -6,5 +6,8 @@
     <string name="titlePrefs">Prefs</string>
     <string name="webInterval">Web Interval</string>
     <string name="summaryWebInterval">Interval to read from the web</string>
+    
+    <string name="amIAwake">Am I awake?</string>
+    <string name="titleWakeme">Wake me?</string>
 
 </resources>
